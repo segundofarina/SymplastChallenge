@@ -14,19 +14,10 @@
 		79AE0691298C223C00467885 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79AE0690298C223C00467885 /* Assets.xcassets */; };
 		79AE0694298C223C00467885 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79AE0692298C223C00467885 /* LaunchScreen.storyboard */; };
 		79AE069F298C223C00467885 /* SymplastChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AE069E298C223C00467885 /* SymplastChallengeTests.swift */; };
-		79AE06A9298C223C00467885 /* SymplastChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AE06A8298C223C00467885 /* SymplastChallengeUITests.swift */; };
-		79AE06AB298C223C00467885 /* SymplastChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AE06AA298C223C00467885 /* SymplastChallengeUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		79AE069B298C223C00467885 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 79AE067C298C223A00467885 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 79AE0683298C223A00467885;
-			remoteInfo = SymplastChallenge;
-		};
-		79AE06A5298C223C00467885 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 79AE067C298C223A00467885 /* Project object */;
 			proxyType = 1;
@@ -46,9 +37,6 @@
 		79AE0695298C223C00467885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79AE069A298C223C00467885 /* SymplastChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SymplastChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79AE069E298C223C00467885 /* SymplastChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymplastChallengeTests.swift; sourceTree = "<group>"; };
-		79AE06A4298C223C00467885 /* SymplastChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SymplastChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		79AE06A8298C223C00467885 /* SymplastChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymplastChallengeUITests.swift; sourceTree = "<group>"; };
-		79AE06AA298C223C00467885 /* SymplastChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymplastChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +54,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		79AE06A1298C223C00467885 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,7 +62,6 @@
 			children = (
 				79AE0686298C223A00467885 /* SymplastChallenge */,
 				79AE069D298C223C00467885 /* SymplastChallengeTests */,
-				79AE06A7298C223C00467885 /* SymplastChallengeUITests */,
 				79AE0685298C223A00467885 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +71,6 @@
 			children = (
 				79AE0684298C223A00467885 /* SymplastChallenge.app */,
 				79AE069A298C223C00467885 /* SymplastChallengeTests.xctest */,
-				79AE06A4298C223C00467885 /* SymplastChallengeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,15 +95,6 @@
 				79AE069E298C223C00467885 /* SymplastChallengeTests.swift */,
 			);
 			path = SymplastChallengeTests;
-			sourceTree = "<group>";
-		};
-		79AE06A7298C223C00467885 /* SymplastChallengeUITests */ = {
-			isa = PBXGroup;
-			children = (
-				79AE06A8298C223C00467885 /* SymplastChallengeUITests.swift */,
-				79AE06AA298C223C00467885 /* SymplastChallengeUITestsLaunchTests.swift */,
-			);
-			path = SymplastChallengeUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,24 +135,6 @@
 			productReference = 79AE069A298C223C00467885 /* SymplastChallengeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		79AE06A3298C223C00467885 /* SymplastChallengeUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 79AE06B4298C223C00467885 /* Build configuration list for PBXNativeTarget "SymplastChallengeUITests" */;
-			buildPhases = (
-				79AE06A0298C223C00467885 /* Sources */,
-				79AE06A1298C223C00467885 /* Frameworks */,
-				79AE06A2298C223C00467885 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				79AE06A6298C223C00467885 /* PBXTargetDependency */,
-			);
-			name = SymplastChallengeUITests;
-			productName = SymplastChallengeUITests;
-			productReference = 79AE06A4298C223C00467885 /* SymplastChallengeUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,10 +149,6 @@
 						CreatedOnToolsVersion = 14.2;
 					};
 					79AE0699298C223C00467885 = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = 79AE0683298C223A00467885;
-					};
-					79AE06A3298C223C00467885 = {
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = 79AE0683298C223A00467885;
 					};
@@ -221,7 +169,6 @@
 			targets = (
 				79AE0683298C223A00467885 /* SymplastChallenge */,
 				79AE0699298C223C00467885 /* SymplastChallengeTests */,
-				79AE06A3298C223C00467885 /* SymplastChallengeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -238,13 +185,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		79AE0698298C223C00467885 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		79AE06A2298C223C00467885 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -272,15 +212,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		79AE06A0298C223C00467885 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				79AE06A9298C223C00467885 /* SymplastChallengeUITests.swift in Sources */,
-				79AE06AB298C223C00467885 /* SymplastChallengeUITestsLaunchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -288,11 +219,6 @@
 			isa = PBXTargetDependency;
 			target = 79AE0683298C223A00467885 /* SymplastChallenge */;
 			targetProxy = 79AE069B298C223C00467885 /* PBXContainerItemProxy */;
-		};
-		79AE06A6298C223C00467885 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 79AE0683298C223A00467885 /* SymplastChallenge */;
-			targetProxy = 79AE06A5298C223C00467885 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -445,6 +371,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,6 +400,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -526,42 +454,6 @@
 			};
 			name = Release;
 		};
-		79AE06B5298C223C00467885 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = UU3WWUU8M5;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.segundofarina.SymplastChallengeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SymplastChallenge;
-			};
-			name = Debug;
-		};
-		79AE06B6298C223C00467885 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = UU3WWUU8M5;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.segundofarina.SymplastChallengeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SymplastChallenge;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -588,15 +480,6 @@
 			buildConfigurations = (
 				79AE06B2298C223C00467885 /* Debug */,
 				79AE06B3298C223C00467885 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		79AE06B4298C223C00467885 /* Build configuration list for PBXNativeTarget "SymplastChallengeUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				79AE06B5298C223C00467885 /* Debug */,
-				79AE06B6298C223C00467885 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
