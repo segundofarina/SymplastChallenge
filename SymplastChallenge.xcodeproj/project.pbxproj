@@ -9,11 +9,18 @@
 /* Begin PBXBuildFile section */
 		79AE0688298C223A00467885 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AE0687298C223A00467885 /* AppDelegate.swift */; };
 		79AE068A298C223A00467885 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AE0689298C223A00467885 /* SceneDelegate.swift */; };
-		79AE068C298C223A00467885 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AE068B298C223A00467885 /* ViewController.swift */; };
-		79AE068F298C223A00467885 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79AE068D298C223A00467885 /* Main.storyboard */; };
 		79AE0691298C223C00467885 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79AE0690298C223C00467885 /* Assets.xcassets */; };
 		79AE0694298C223C00467885 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79AE0692298C223C00467885 /* LaunchScreen.storyboard */; };
-		79AE069F298C223C00467885 /* SymplastChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AE069E298C223C00467885 /* SymplastChallengeTests.swift */; };
+		79AE06B9298C22FE00467885 /* AppointmentsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AE06B8298C22FE00467885 /* AppointmentsService.swift */; };
+		79AE06BC298C239200467885 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AE06BB298C239200467885 /* Appointment.swift */; };
+		79AE06BE298C248F00467885 /* AppointmentsServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AE06BD298C248F00467885 /* AppointmentsServiceImpl.swift */; };
+		79AE06C0298C2F7100467885 /* AppointmentsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AE06BF298C2F7100467885 /* AppointmentsServiceTests.swift */; };
+		79AE06C2298C38D400467885 /* XCTestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AE06C1298C38D400467885 /* XCTestCase+Extensions.swift */; };
+		79AE06C5298C3AFD00467885 /* AppointmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AE06C4298C3AFD00467885 /* AppointmentsViewController.swift */; };
+		79AE06C7298C3BA000467885 /* AppointmentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AE06C6298C3BA000467885 /* AppointmentsViewModel.swift */; };
+		79AE06C9298C470800467885 /* AppointmentsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AE06C8298C470800467885 /* AppointmentsViewModelTests.swift */; };
+		79AE06CB298C68D200467885 /* AppointmentsRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AE06CA298C68D200467885 /* AppointmentsRootView.swift */; };
+		79AE06CD298D3A7800467885 /* AppointmentViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AE06CC298D3A7800467885 /* AppointmentViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,13 +37,20 @@
 		79AE0684298C223A00467885 /* SymplastChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SymplastChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79AE0687298C223A00467885 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79AE0689298C223A00467885 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		79AE068B298C223A00467885 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		79AE068E298C223A00467885 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		79AE0690298C223C00467885 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79AE0693298C223C00467885 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79AE0695298C223C00467885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79AE069A298C223C00467885 /* SymplastChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SymplastChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		79AE069E298C223C00467885 /* SymplastChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymplastChallengeTests.swift; sourceTree = "<group>"; };
+		79AE06B8298C22FE00467885 /* AppointmentsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsService.swift; sourceTree = "<group>"; };
+		79AE06BB298C239200467885 /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
+		79AE06BD298C248F00467885 /* AppointmentsServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsServiceImpl.swift; sourceTree = "<group>"; };
+		79AE06BF298C2F7100467885 /* AppointmentsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsServiceTests.swift; sourceTree = "<group>"; };
+		79AE06C1298C38D400467885 /* XCTestCase+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Extensions.swift"; sourceTree = "<group>"; };
+		79AE06C4298C3AFD00467885 /* AppointmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsViewController.swift; sourceTree = "<group>"; };
+		79AE06C6298C3BA000467885 /* AppointmentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsViewModel.swift; sourceTree = "<group>"; };
+		79AE06C8298C470800467885 /* AppointmentsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsViewModelTests.swift; sourceTree = "<group>"; };
+		79AE06CA298C68D200467885 /* AppointmentsRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsRootView.swift; sourceTree = "<group>"; };
+		79AE06CC298D3A7800467885 /* AppointmentViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,10 +92,11 @@
 		79AE0686298C223A00467885 /* SymplastChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				79AE06C3298C399800467885 /* Presentation */,
+				79AE06BA298C237D00467885 /* Models */,
+				79AE06B7298C22E100467885 /* Services */,
 				79AE0687298C223A00467885 /* AppDelegate.swift */,
 				79AE0689298C223A00467885 /* SceneDelegate.swift */,
-				79AE068B298C223A00467885 /* ViewController.swift */,
-				79AE068D298C223A00467885 /* Main.storyboard */,
 				79AE0690298C223C00467885 /* Assets.xcassets */,
 				79AE0692298C223C00467885 /* LaunchScreen.storyboard */,
 				79AE0695298C223C00467885 /* Info.plist */,
@@ -92,9 +107,39 @@
 		79AE069D298C223C00467885 /* SymplastChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				79AE069E298C223C00467885 /* SymplastChallengeTests.swift */,
+				79AE06BF298C2F7100467885 /* AppointmentsServiceTests.swift */,
+				79AE06C1298C38D400467885 /* XCTestCase+Extensions.swift */,
+				79AE06C8298C470800467885 /* AppointmentsViewModelTests.swift */,
 			);
 			path = SymplastChallengeTests;
+			sourceTree = "<group>";
+		};
+		79AE06B7298C22E100467885 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				79AE06B8298C22FE00467885 /* AppointmentsService.swift */,
+				79AE06BD298C248F00467885 /* AppointmentsServiceImpl.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		79AE06BA298C237D00467885 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				79AE06BB298C239200467885 /* Appointment.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		79AE06C3298C399800467885 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				79AE06C4298C3AFD00467885 /* AppointmentsViewController.swift */,
+				79AE06C6298C3BA000467885 /* AppointmentsViewModel.swift */,
+				79AE06CA298C68D200467885 /* AppointmentsRootView.swift */,
+				79AE06CC298D3A7800467885 /* AppointmentViewCell.swift */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,7 +225,6 @@
 			files = (
 				79AE0694298C223C00467885 /* LaunchScreen.storyboard in Resources */,
 				79AE0691298C223C00467885 /* Assets.xcassets in Resources */,
-				79AE068F298C223A00467885 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,9 +242,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79AE068C298C223A00467885 /* ViewController.swift in Sources */,
+				79AE06BE298C248F00467885 /* AppointmentsServiceImpl.swift in Sources */,
+				79AE06CD298D3A7800467885 /* AppointmentViewCell.swift in Sources */,
+				79AE06C5298C3AFD00467885 /* AppointmentsViewController.swift in Sources */,
 				79AE0688298C223A00467885 /* AppDelegate.swift in Sources */,
+				79AE06CB298C68D200467885 /* AppointmentsRootView.swift in Sources */,
+				79AE06C7298C3BA000467885 /* AppointmentsViewModel.swift in Sources */,
 				79AE068A298C223A00467885 /* SceneDelegate.swift in Sources */,
+				79AE06B9298C22FE00467885 /* AppointmentsService.swift in Sources */,
+				79AE06BC298C239200467885 /* Appointment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,7 +258,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79AE069F298C223C00467885 /* SymplastChallengeTests.swift in Sources */,
+				79AE06C9298C470800467885 /* AppointmentsViewModelTests.swift in Sources */,
+				79AE06C2298C38D400467885 /* XCTestCase+Extensions.swift in Sources */,
+				79AE06C0298C2F7100467885 /* AppointmentsServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,14 +275,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		79AE068D298C223A00467885 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				79AE068E298C223A00467885 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		79AE0692298C223C00467885 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -368,7 +412,7 @@
 				INFOPLIST_FILE = SymplastChallenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -397,7 +441,7 @@
 				INFOPLIST_FILE = SymplastChallenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
