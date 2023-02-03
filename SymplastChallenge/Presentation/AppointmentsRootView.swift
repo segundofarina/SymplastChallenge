@@ -67,39 +67,28 @@ class AppointmentsRootView: UIView {
   }
   
   private func initConstraints() {
-    self.table.translatesAutoresizingMaskIntoConstraints = false
-    NSLayoutConstraint.activate([
-      self.table.topAnchor.constraint(equalTo: self.searchBar.bottomAnchor, constant: 10),
-      self.table.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor),
-      self.table.leadingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leadingAnchor),
-      self.table.trailingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.trailingAnchor)
-    ])
     
-    self.searchBar.translatesAutoresizingMaskIntoConstraints = false
+    self.refreshButton.snp.makeConstraints { make in
+      make.top.trailing.equalTo(safeAreaLayoutGuide).offset(10)
+      make.height.equalTo(24)
+      make.width.equalTo(120)
+    }
     
-    NSLayoutConstraint.activate([
-      self.searchBar.leadingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leadingAnchor),
-      self.searchBar.trailingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.trailingAnchor),
-      self.searchBar.topAnchor.constraint(equalTo: self.refreshButton.bottomAnchor)
-    ])
+    self.searchBar.snp.makeConstraints { make in
+      make.leading.trailing.equalTo(safeAreaLayoutGuide)
+      make.top.equalTo(refreshButton.snp.bottom).offset(8)
+    }
     
-    self.activityIndicator.translatesAutoresizingMaskIntoConstraints = false
+    self.table.snp.makeConstraints{ make in
+      make.bottom.leading.trailing.equalTo(safeAreaLayoutGuide)
+      make.top.equalTo(searchBar.snp.bottom).offset(10)
+    }
+
+    self.activityIndicator.snp.makeConstraints { make in
+      make.centerX.centerY.equalTo(safeAreaLayoutGuide)
+      make.height.width.equalTo(24)
+    }
     
-    NSLayoutConstraint.activate([
-      self.activityIndicator.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor),
-      self.activityIndicator.centerYAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerYAnchor),
-      self.activityIndicator.heightAnchor.constraint(equalToConstant: 24),
-      self.activityIndicator.widthAnchor.constraint(equalToConstant: 24)
-    ])
-    
-    self.refreshButton.translatesAutoresizingMaskIntoConstraints = false
-    
-    NSLayoutConstraint.activate([
-      self.refreshButton.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 10),
-      self.refreshButton.trailingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.trailingAnchor, constant: 10),
-      self.refreshButton.heightAnchor.constraint(equalToConstant: 20),
-      self.refreshButton.widthAnchor.constraint(equalToConstant: 120)
-    ])
   }
   
   required init?(coder: NSCoder) {

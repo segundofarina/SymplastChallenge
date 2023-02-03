@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class AppointmentViewCell: UITableViewCell {
   
@@ -32,23 +33,18 @@ class AppointmentViewCell: UITableViewCell {
   }
   
   private func setTitleConstraints() {
-    title.translatesAutoresizingMaskIntoConstraints = false
-    NSLayoutConstraint.activate([
-      title.topAnchor.constraint(equalTo: topAnchor, constant: 12),
-      title.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 12),
-      title.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 12),
-      title.heightAnchor.constraint(equalToConstant: 16)
-    ])
+    title.snp.makeConstraints { make in
+      make.top.leading.trailing.equalToSuperview().offset(12)
+      make.height.equalTo(16)
+    }
   }
   
   private func setSubtitleConstraints() {
-    subtitle.translatesAutoresizingMaskIntoConstraints = false
-    NSLayoutConstraint.activate([
-      subtitle.topAnchor.constraint(equalTo: title.bottomAnchor, constant: 12),
-      subtitle.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 12),
-      subtitle.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 12),
-      subtitle.heightAnchor.constraint(equalToConstant: 16)
-    ])
+    subtitle.snp.makeConstraints { make in
+      make.top.equalTo(title.snp.bottom).offset(12)
+      make.leading.trailing.equalToSuperview().offset(12)
+      make.height.equalTo(16)
+    }
   }
   
   func setAppointment(appointment: Appointment) {
