@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Appointment: Codable, Equatable{
+struct Appointment: Codable, Equatable {
   let id: Int
   let durationInMinutes: Int
   let overrideName: String

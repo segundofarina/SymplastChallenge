@@ -63,7 +63,7 @@ class AppointmentsViewController: UIViewController {
   }
   
   func showError(title: String = "Oops!",  message: String) {
-    var alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+    let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
     alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: {_ in}))
     self.present(alert, animated: true, completion: nil)
   }

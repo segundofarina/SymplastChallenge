@@ -191,13 +191,4 @@ final class AppointmentsViewModelTests: XCTestCase {
     
   }
   
-
-  
-  
-  
-  
-  
-  
-  
-  
 }

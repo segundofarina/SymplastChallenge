@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-struct ApiResponse<T>: Decodable where T:Decodable{
+struct ApiResponse<T>: Decodable where T:Decodable {
   let result: T
   let statusCode: Int
   let version: String
@@ -20,9 +20,9 @@ class AppointmentsServiceImpl: AppointmentsService {
         return URLSession.shared.dataTaskPublisher(for: url)
           .catch { error in
             return Fail(error: error).eraseToAnyPublisher()
-          }.map({ $0.data })
+          }.map(\.data)
           .decode(type: ApiResponse<[Appointment]>.self, decoder: JSONDecoder())
-          .map{$0.result}
+          .map(\.result)
           .eraseToAnyPublisher()
       }
 }
