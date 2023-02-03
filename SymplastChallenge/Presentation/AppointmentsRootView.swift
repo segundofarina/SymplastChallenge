@@ -47,7 +47,7 @@ class AppointmentsRootView: UIView {
     self.table = UITableView()
     self.table.dataSource = self
     self.table.delegate = self
-    self.table.rowHeight = 72
+    self.table.rowHeight = 96
     self.table.register(AppointmentViewCell.self, forCellReuseIdentifier: Self.cellIdentifier)
     self.table.allowsSelection = false
     self.addSubview(table)
@@ -67,11 +67,10 @@ class AppointmentsRootView: UIView {
   }
   
   private func initConstraints() {
-    
+    let padding = 12
     self.refreshButton.snp.makeConstraints { make in
-      make.top.trailing.equalTo(safeAreaLayoutGuide).offset(10)
-      make.height.equalTo(24)
-      make.width.equalTo(120)
+      make.top.equalTo(safeAreaLayoutGuide).offset(padding)
+      make.trailing.equalTo(safeAreaLayoutGuide).offset(-padding)
     }
     
     self.searchBar.snp.makeConstraints { make in
@@ -81,7 +80,7 @@ class AppointmentsRootView: UIView {
     
     self.table.snp.makeConstraints{ make in
       make.bottom.leading.trailing.equalTo(safeAreaLayoutGuide)
-      make.top.equalTo(searchBar.snp.bottom).offset(10)
+      make.top.equalTo(searchBar.snp.bottom).offset(padding)
     }
 
     self.activityIndicator.snp.makeConstraints { make in

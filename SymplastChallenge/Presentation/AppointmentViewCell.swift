@@ -13,6 +13,8 @@ class AppointmentViewCell: UITableViewCell {
   var title: UILabel = UILabel()
   var subtitle: UILabel = UILabel()
   
+  let padding = 12
+  
   override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
     super.init(style: style, reuseIdentifier: reuseIdentifier)
     addSubview(title)
@@ -26,24 +28,23 @@ class AppointmentViewCell: UITableViewCell {
     fatalError("init(coder:) has not been implemented")
   }
   
-  
   private func setupTitle() {
     self.title.font = .systemFont(ofSize: title.font.pointSize, weight: .semibold)
-//    self.title.numberOfLines = 0
+    self.title.numberOfLines = 2
+    self.title.lineBreakMode = .byWordWrapping
   }
   
   private func setTitleConstraints() {
     title.snp.makeConstraints { make in
-      make.top.leading.trailing.equalToSuperview().offset(12)
-      make.height.equalTo(16)
+      make.top.leading.equalToSuperview().offset(padding)
+      make.trailing.equalToSuperview().offset(-padding)
     }
   }
   
   private func setSubtitleConstraints() {
     subtitle.snp.makeConstraints { make in
-      make.top.equalTo(title.snp.bottom).offset(12)
-      make.leading.trailing.equalToSuperview().offset(12)
-      make.height.equalTo(16)
+      make.leading.equalToSuperview().offset(padding)
+      make.bottom.trailing.equalToSuperview().offset(-padding)
     }
   }
   

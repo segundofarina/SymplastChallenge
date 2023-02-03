@@ -143,6 +143,26 @@ final class AppointmentsViewModelTests: XCTestCase {
     
   }
   
+  func test_updateSearchTerm_dispatchesSearchTermUpdated() {
+      let (vm, _) = makeSUT()
+      
+      let expectation = self.expectation(description: "search term updated dispatched")
+      
+      let cancellable = vm.eventDispatch.sink { event in
+        switch (event) {
+        case .searchTermUpdated:
+          expectation.fulfill()
+        default: break
+        }
+      }
+      vm.updateSearchTerm(term: "hello")
+      
+      waitForExpectations(timeout: 1)
+      
+      cancellable.cancel()
+    
+  }
+  
   func test_updateSearchTerm_caseInsensitive() {
     let (vm, service) = makeSUT()
     service.appointments = [AppointmentsServiceSpy.appointment1, AppointmentsServiceSpy.appointment2, AppointmentsServiceSpy.appointment3]
