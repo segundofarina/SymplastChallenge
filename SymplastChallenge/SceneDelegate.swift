@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -21,7 +22,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     window = UIWindow(windowScene: windowScene)
     window?.windowScene = windowScene
     
+    // Switch this for changing between UIKit and SwiftUI
     window?.rootViewController = AppointmentsViewController()
+//    window?.rootViewController = UIHostingController(rootView: AppointmentsScene())
     
     window?.makeKeyAndVisible()
     
