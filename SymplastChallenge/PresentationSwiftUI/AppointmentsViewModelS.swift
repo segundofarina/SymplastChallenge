@@ -9,10 +9,12 @@ import Foundation
 import Combine
 
 class AppointmentsViewModelS: ObservableObject {
-  @Published var allAppointments: [Appointment] = []
+  @Published private var allAppointments: [Appointment] = []
+  
+  @Published private(set) var errorMessage: String = ""
+  @Published private(set) var isLoadingData = true
+  
   @Published var searchTerm: String = ""
-  @Published var errorMessage: String = ""
-  @Published var isLoadingData = true
   @Published var isPresentingAlert = false
   
   var filteredAppointments: [Appointment] {
